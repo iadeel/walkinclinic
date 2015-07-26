@@ -1,0 +1,32 @@
+﻿@model WalkInMedicalClinic.WebUI.Models.ReferralFormViewModel
+
+@{
+    ViewBag.Title = "ReferralForm";
+}
+
+<section id="content">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Please download and print the referral form and return it to our clinic.</p>
+
+                <a href="~/Home/GetReferralForm" class="btn btn-default">Click here to download</a>
+                <br/><br/>
+                <p>If you already have a completed referral form, you can upload it right here.</p>
+
+                <div class="contact-form">
+                    <form id="contact-form" role="form" novalidate="novalidate">
+                        <div class="form-group has-feedback">
+                            <span class="btn btn-default btn-file">
+                                Click here to upload the referral form<input type="file" class="form-control" id="name" name="name">
+                            </span>
+                        </div>
+                        <input type="submit" value="Upload" class="btn btn-default hidden">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
